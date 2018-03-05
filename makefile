@@ -11,7 +11,7 @@ ${OUTPUTDIR} :
 	@-mkdir -p $(OUTPUTDIR)
 
 slide : ${OUTPUTDIR}
-	@-pandoc -s -t beamer meta.md summary.md */README.md -o $(OUTPUTDIR)/slides.pdf
+	@-pandoc -s -t beamer --slide-level=3 meta.md summary.md */README.md -o $(OUTPUTDIR)/slides.pdf
 
 book : ${OUTPUTDIR}
 	@-pandoc -s meta.md */README.md -o $(OUTPUTDIR)/book.pdf --toc
