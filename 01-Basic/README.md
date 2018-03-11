@@ -11,8 +11,7 @@
 
 ![https://imgs.xkcd.com/comics/password_strength.png](password_strength.png)
 
-Il est important de s'assurer que tous les collaborateurs au sein de votre
-entreprise aient un mot de passe suffisament fort. "Principe du maillon faible".
+Il est important de s'assurer que tous les collaborateurs au sein de votre entreprise aient un mot de passe suffisament fort. "Principe du maillon faible".
 
 
 La solution:
