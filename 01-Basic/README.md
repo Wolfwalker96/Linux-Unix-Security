@@ -20,15 +20,53 @@ password	requisite	pam_pwquality.so retry=3
 # Ajouter un nombre minimal de charactères
 password	requisite	pam_pwquality.so retry=3 minlen=25
 ```
-
-
 ###
 
 ![https://xkcd.com/936/](01-Basic/password_strength.png)
 
-## Permissions Linux
+## Permissions des fichiers
 
+### Permission de bases (rappel)
 
-### Permissions Linux
+ * **Discretionary access control (DAC)** Accées définit pour
+	* L'utilisateur propriétaire
+	* Le groupe propriétaire
+	* Les autres utilisateurs
+ * Droits possibles
+	* Lire *r*
+	* Ecrire *w*
+	* Executer / Parcourir *x*
+
+```bash
+ls -l /bin/cat
+	-rwxr-xr-x 1 root root 52080 mar  2  2017 /bin/cat
+```
+
+**Constatations** : Utilisation limitée !
+
+### Exemple de limitation
+
+| Groupe                   	| Lire 	| Ecrire 	| Exécuter 	|
+|--------------------------	|------	|--------	|----------	|
+| Chefs de services        	| Oui  	| Oui    	| Oui      	|
+| Employés de comptabilité 	| Oui  	| Non    	| Oui      	|
+| Autres employés          	| Non  	| Non    	| Non      	|
 
 ### Permission ACL
+
+ * **Access Control List** Accès définit par une liste de contrôle d'accèes (à la Windows)
+	* Permissions pour tout le monde (pas uniquement les propriétaires)
+	* Plus de flexibilité
+ * Necessite de monter le système de fichier avec l'option `acl`
+ * S'utilise avec les commandes suivantes : 
+
+```bash
+setfacl -m "u:bob:r-x" alice # Ajoute une permission à un utilisateur
+setfacl -m "g:aab:rwx" alice-and-bob # Ajoute une permission à un groupe
+setfacl -x "user:cloe" alice-and-bob # Supprime une entrée 
+
+```
+
+## Firewall
+
+### Firewall : Les bases
