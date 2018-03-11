@@ -7,9 +7,9 @@
 	 * Permission des fichiers
  * Sécurité des applications
 	 * Isolation
-		* Privilege isolation
-		* Filesystem isolation
-		* Control Group Resource isolation
+		* Isolation des privilèges
+		* Isolation du filesystem
+		* Isolation par groupes de contrôle de ressources
 	 * AppArmor
  * Sécurité avancée
 	 * Escalation des permissions

@@ -26,9 +26,7 @@ password	requisite	pam_pwquality.so retry=3 minlen=25
 
 ![https://xkcd.com/936/](01-Basic/password_strength.png)
 
-## Permissions Linux
+## Permission des fichiers
 
+### Permission des fichiers
 
-### Permissions Linux
-
-### Permission ACL
