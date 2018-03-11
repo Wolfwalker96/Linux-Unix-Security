@@ -5,15 +5,20 @@
 ### Utilisateurs
 
 ### Mots de passe
-* Mdp idéal
-  * Minimum 14 charactères
-  * Charactères alpha numériques et spéciaux
+* Mot de passe idéal <=> Entropie maximale
+  * Écrire une phrase entière, simple mémoriser
+  * Plus de 25 charactères
 
+![https://imgs.xkcd.com/comics/password_strength.png](password_strength.png)
 
 Il est important de s'assurer que tous les collaborateurs au sein de votre
 entreprise aient un mot de passe suffisament fort. "Principe du maillon faible".
 
-La solution: Utiliser PAM
+
+La solution:
+```bash
+sudo apt-get install libpam-pwquality
+```
 
 ## Permissions
 
