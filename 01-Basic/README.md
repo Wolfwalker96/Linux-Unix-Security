@@ -1,26 +1,34 @@
 # Sécurité de base
 
-## Utilisateurs et Mots de passe
+## Configuration du mot de passe
 
-### Utilisateurs
-
-### Mots de passe
-* Mot de passe idéal <=> Entropie maximale
-  * Écrire une phrase entière, simple mémoriser
-  * Plus de 25 charactères
-
-![https://imgs.xkcd.com/comics/password_strength.png](password_strength.png)
-
-Il est important de s'assurer que tous les collaborateurs au sein de votre entreprise aient un mot de passe suffisament fort. "Principe du maillon faible".
-
+### Configuration du mot de passe
+* Mot de passe idéal &rightarrow; Entropie maximale
+	* Écrire une phrase entière, simple à mémoriser
+	* Plus de 25 charactères
 
 La solution:
 ```bash
 sudo apt-get install libpam-pwquality
+nano /etc/pam.d/common-password
 ```
 
-## Permissions
+```bash
+# Trouver les options du password
+password	requisite	pam_pwquality.so retry=3
 
-### Permissions Linux de base
+# Ajouter un nombre minimal de charactères
+password	requisite	pam_pwquality.so retry=3 minlen=25
+```
+
+
+###
+
+![https://xkcd.com/936/](01-Basic/password_strength.png)
+
+## Permissions Linux
+
+
+### Permissions Linux
 
 ### Permission ACL
