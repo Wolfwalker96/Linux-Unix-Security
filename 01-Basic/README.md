@@ -70,3 +70,16 @@ setfacl -x "user:cloe" alice-and-bob # Supprime une entrée
 ## Firewall
 
 ### Firewall : Les bases
+
+ * Parfeux Linux : `iptables`
+ * Travail avec de Policy chains
+	* Plusieurs types
+		* **INPUT** : Traffic entrant
+		* **OUTPUT** : Traffic sortant
+		* **FORWARD** : Dans le cas de routing ou de NAT
+	* Plusieurs règles dans une chaine
+ * Action en cas de connexion
+	* **ACCEPT** Accepte la connexion
+	* **REJECT** Refuse la connexion
+	* **DROP** Ne répond pas
+
