@@ -4,7 +4,7 @@
  * Sécurité de base
 	 * Configuration du mot de passe
 	 * Firewall Linux
-	 * Permissions Linux ACL
+	 * Permission des fichiers
  * Sécurité des applications
 	 * Isolation
 		* Privilege isolation
