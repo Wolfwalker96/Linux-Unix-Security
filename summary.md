@@ -1,12 +1,12 @@
 ### Sommaire
 
  * Introduction
- * Sécurité de base
+ * SÃ©curitÃ© de base
 	 * Configuration du mot de passe (PAM)
 	 * Firewall Linux
 	 * Permissions Linux
- * Sécurité des applications
+ * SÃ©curitÃ© des applications
 	 * Isolation
 	 * AppArmor
- * Sécurité avancée
+ * SÃ©curitÃ© avancÃ©e
 	 * Escalation des permissions
