@@ -1,34 +1,34 @@
 
-# Sécurité des applications
+# SÃ©curitÃ© des applications
 
 ## Isolation
 
-### Isolation des privilèges
+### Isolation des privilÃ¨ges
 
 &rarr; Chmod
 
-La forme d'isolation la plus basique. Consiste à définir l'accès à certain privilèges (applications) pour un utilisateur ou un groupe.
+La forme d'isolation la plus basique. Consiste Ã  dÃ©finir l'accÃ¨s Ã  certain privilÃ¨ges (applications) pour un utilisateur ou un groupe.
 
 
 ### Isolation du filesystem
 
 &rarr; Chroot
 
-Utilisation de chroot (change root) afin de modifier la racine d'une application. Permet de créer une pseudo racine "/" à partire de laquelle se trouve
+Utilisation de chroot (change root) afin de modifier la racine d'une application. Permet de crÃ©er une pseudo racine "/" Ã  partire de laquelle se trouve
 un nouvel arbre. 
 
-* Peut être utilisé pour
-	* Créer un environement de dévelopement
+* Peut Ãªtre utilisÃ© pour
+	* CrÃ©er un environement de dÃ©velopement
 	* Isoler des services
-	* Restreindre des accès
+	* Restreindre des accÃ¨s
  
-### Isolation par groupes de contrôle de ressources
+### Isolation par groupes de contrÃ´le de ressources
 
 &rarr; Cg (Control group)
 	
 * Permet d'isoler des ressources tel que 
 	* les I/O
-	* La mémoire
+	* La mÃ©moire
 	* Le CPU
 	* Et bien d'autres...
 
