@@ -1,5 +1,10 @@
 # Sécurité de base
 
+### La base de la base
+
+* Mise à jours du système et de ses composants
+* Préférer les dépots officiels
+
 ## Configuration du mot de passe
 
 ### Configuration du mot de passe
@@ -82,4 +87,25 @@ setfacl -x "user:cloe" alice-and-bob # Supprime une entrée
 	* **ACCEPT** Accepte la connexion
 	* **REJECT** Refuse la connexion
 	* **DROP** Ne répond pas
+
+### Comment utiliser `iptables`
+
+ * Définir une règle globale
+	* Par défaut ACCEPT
+
+```Bash
+iptables --policy INPUT DROP
+```
+
+* Définir une règles plus précise
+
+```Bash
+iptables -A INPUT -s 192.168.1.0/24 -j ACCEPT
+```
+
+* Un port ?
+
+```Bash
+iptables -A INPUT -p tcp --dport ssh -s 192.168.1.128/25 -j ACCEPT
+```
 
