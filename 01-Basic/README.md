@@ -3,6 +3,9 @@
 ### La base de la base
 
 * Mise à jours du système et de ses composants
+	* Rester informé des nouvelles failles 
+
+		*Par exemple : [Ubuntu Security Notices](https://usn.ubuntu.com/)*
 * Préférer les dépots officiels
 
 ## Configuration du mot de passe
