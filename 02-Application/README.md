@@ -26,7 +26,7 @@ un nouvel arbre.
 
 &rarr; Cg (Control group)
 	
-* Permet d'isoler des ressources tel que 
+* Permet d'isoler des ressources telles que 
 	* les I/O
 	* La mémoire
 	* Le CPU
@@ -34,13 +34,23 @@ un nouvel arbre.
 
 	
 	
-### LXC (logiciel d'isolation de foufou, a voir)
+### Système d'isolation clé en main
 
-### chroot
+* Docker
+* LXC
 
-### Nouveau Format de package
+### Nouveau gestionnaire de paquets
+
  * Snap
 	 * Canonical
 	 * Isolation par LXC
- * Flatpack
+	 * IoT, Server, Cloud, Bureau
+	 * Package auto-suffisant
+	 * Mise à jour transactionnel
+ * Flatpak
 	 * GNOME, Red Hat
+	 * Application de bureau
+	 * Multiple source
+ * Point communs
+	 * Système de "permission"
+	 * Paquets compatible entre distribution
