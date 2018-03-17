@@ -1,4 +1,4 @@
-# Sécurité de base
+# Configuration
 
 ### La base de la base
 
@@ -74,6 +74,16 @@ setfacl -m "g:aab:rwx" alice-and-bob # Ajoute une permission à un groupe
 setfacl -x "user:cloe" alice-and-bob # Supprime une entrée
 
 ```
+
+## Super Utilisateur
+
+### Qui est root ?
+
+### 
+
+![https://xkcd.com/149/](01-Basic/sandwich.png)
+
+### `sudo`
 
 ## Firewall
 
