@@ -1,15 +1,15 @@
 ### Sommaire
 
  * Introduction
- * Sécurité de base
+ * Configuration
 	 * Configuration du mot de passe
-	 * Firewall Linux
 	 * Permission des fichiers
+	 * Super utilisateur
+	 * Firewall Linux
  * Sécurité des applications
 	 * Isolation
-		* Isolation des privilèges
-		* Isolation du filesystem
-		* Isolation par groupes de contrôle de ressources
-	 * AppArmor
- * Sécurité avancée
+		 * Isolation des privilèges
+		 * Isolation du filesystem
+		 * Isolation par groupes de contrôle de ressources
+ * Failles
 	 * Escalation des permissions
