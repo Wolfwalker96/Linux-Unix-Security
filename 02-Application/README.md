@@ -54,7 +54,7 @@ Note: Un processus peut lui-même créer de nouveaux namespaces.
 ### Système d'isolation clé en main
 
 * Docker
- * Gestionnaire de conteneurs
+ 	* Gestionnaire de conteneurs
 * LXC
 	* Système de virtualisation
 
