@@ -7,9 +7,8 @@
 	 * Super utilisateur
 	 * Firewall Linux
  * Sécurité des applications
-	 * Isolation
-		 * Isolation des privilèges
-		 * Isolation du filesystem
-		 * Isolation par groupes de contrôle de ressources
- * Failles
-	 * Escalation des permissions
+	 * Isolation manuelle
+	 * Isolation clé en main
+ * Faille
+	 * Escalade des privilèges
+ * Conclusion
