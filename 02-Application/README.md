@@ -37,8 +37,8 @@ un nouvel arbre.
 
 * Aspect fondamental des containers dans Linux
 * Permet de gérer l'accès aux ressources par un processus
-* Un processus ne peut accèdes que aux ressources de son namespace
-* Mais plusieurs namespaces peuvent avoir en commun les même ressources
+* Un processus ne peut accèdes qu'aux ressources de son namespace
+	* Mais plusieurs namespaces peuvent avoir en commun les même ressources
 * Les principaux namespaces sont:
 	* Mouns (`mnt`)
 	* Process ID (`pid`)
@@ -47,7 +47,7 @@ un nouvel arbre.
 	* User ID (`user`)
 	* Control group (`cgroup`)
 
-Note: Un processus peut lui-même créer de nouveaux namespaces.
+**Note :** Un processus peut lui-même créer de nouveaux namespaces.
 
 
 
@@ -65,7 +65,7 @@ Note: Un processus peut lui-même créer de nouveaux namespaces.
 * Système de virtualisation par isolation
 * Utilise les fonctionnalités de `cgroups` et les namespaces du noyau
 * Isole des 'environnements' Linux
-* Les environnement partagent le même noyau
+* Les environnements partagent le même noyau
 * Mais l'environnement d’exécution est virtualisé
 	* Processeur
 	* RAM
