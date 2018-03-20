@@ -79,11 +79,31 @@ setfacl -x "user:cloe" alice-and-bob # Supprime une entrée
 
 ### Qui est root ?
 
+* Le propriétaire des fichiers systèmes
+* L'administrateur suprême du système
+* Généralement un utilisateur non-physique
+
 ### 
 
 ![https://xkcd.com/149/](01-Basic/sandwich.png)
 
 ### `sudo`
+
+* Execute une commande en tant que root ou qu'un autre utilisateur
+	* `sudo -u jean -g jean id`
+* Autorisation stocker dans le fichier `/etc/sudoers`
+	* À modifier avec `visudo`
+
+	```
+	# User privilege specification
+	root    ALL=(ALL:ALL) ALL
+	
+	# Allow members of group sudo to execute any command
+	%sudo   ALL=(ALL:ALL) ALL
+
+	# %group/user host=(runasusers : runasgroups) options: commands
+	florian	ALL=(paul:paul) NOPASSWD: ls
+	```
 
 ## Firewall
 
