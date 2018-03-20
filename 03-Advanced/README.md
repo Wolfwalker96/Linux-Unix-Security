@@ -1,6 +1,6 @@
 # Failles
 
-## Escalade de privilièges
+## Escalade de privilèges
 
 ### Parlons du sticky bit
 
