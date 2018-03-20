@@ -1,7 +1,7 @@
 
 # Sécurité des applications
 
-## Isolation
+## Isolation manuelle
 
 ### Types d'Isolation
 
@@ -49,7 +49,7 @@ un nouvel arbre.
 
 **Note :** Un processus peut lui-même créer de nouveaux namespaces.
 
-
+## Isolation clé en main
 
 ### Système d'isolation clé en main
 
